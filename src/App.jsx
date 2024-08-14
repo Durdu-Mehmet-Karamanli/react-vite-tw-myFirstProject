@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   const [minVal , setMinVal] = useState(0);
   const [maxVal , setMaxVal] = useState(10);
-  const [randomNum , setRandomNum] = useState('dene baam aslan yenim');
+  const [randomNum , setRandomNum] = useState();
   const giveRandomNumber = () => {
     if (minVal > maxVal) {
       alert('Minimum değer maksimum değerden büyük olamaz!');
