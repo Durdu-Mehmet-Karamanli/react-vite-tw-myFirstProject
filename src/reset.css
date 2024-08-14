@@ -1,0 +1,81 @@
+/* reset.css */
+
+/* Box-sizing ve margin/padding sıfırlama */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Temel stiller */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* WebKit tarayıcılar için fontları düzgün göstermek */
+  -moz-osx-font-smoothing: grayscale; /* Firefox için fontları düzgün göstermek */
+  background-color: #4caf50; /* Varsayılan arka plan rengi */
+  color: #333; /* Varsayılan metin rengi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Linkler */
+a {
+  text-decoration: none; /* Linklerin altını çizmemek */
+  color: inherit; /* Linklerin renklerini miras almak */
+}
+
+/* Listeler */
+ul, ol {
+  list-style: none; /* Liste işaretlerini kaldırmak */
+}
+
+/* Form öğeleri */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Tablolar */
+table {
+  border-collapse: collapse; /* Tablo kenarlıklarını birleştirmek */
+  border-spacing: 0; /* Tablo hücreleri arasındaki boşluğu sıfırlamak */
+}
+
+td, th {
+  padding: 0; /* Hücrelerde varsayılan dolgu boşluklarını sıfırlamak */
+}
+
+/* Görünmeyen öğeler */
+img {
+  max-width: 100%;
+  height: auto; /* Görüntülerin konteynerden taşmasını engellemek */
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer; /* Düğmelere tıklanabilir işareti eklemek */
+}
+
+/* Genel */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Gövde ve bölümler */
+header, footer, main, section, article, aside {
+  display: block;
+}
